@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercices de Maths Interactifs</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .exercice {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 5px solid #3498db;
+    }
+    .reponse {
+      display: none;
+      color: green;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercices de Mathématiques</h1>
+
+  <div class="exercice">
+    <h3>Exercice 1 : Calcul</h3>
+    <p>Calcule : (7 + 3) × 2 - 5²</p>
+    <button onclick="document.getElementById('rep1').style.display='block'">Voir la réponse</button>
+    <div class="reponse" id="rep1">Réponse : (10 × 2) - 25 = 20 - 25 = -5</div>
+  </div>
+
+  <div class="exercice">
+    <h3>Exercice 2 : Équation</h3>
+    <p>Résous : 3x - 7 = 2x + 5</p>
+    <button onclick="document.getElementById('rep2').style.display='block'">Voir la réponse</button>
+    <div class="reponse" id="rep2">Réponse : x = 12</div>
+  </div><div class="exercice">
+    <h3>Exercice 3 : Géométrie</h3>
+    <p>Un triangle a deux côtés de 6 cm et 8 cm. Peut-il être rectangle ?</p>
+    <button onclick="document.getElementById('rep3').style.display='block'">Voir la réponse</button>
+    <div class="reponse" id="rep3">Réponse : Non, car 6² + 8² = 100 ≠ côté² exact</div>
+  </div>
+
+</body>
+</html>
